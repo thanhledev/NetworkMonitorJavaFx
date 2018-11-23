@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ServerScreenController">
+    <children>
+        <JFXTextField fx:id="listenPortTextField" labelFloat="true" layoutX="368.0" layoutY="23.0" prefHeight="33.0" prefWidth="147.0" promptText="LISTENING PORT (*)">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="startButton" layoutX="568.0" layoutY="22.0" prefHeight="40.0" prefWidth="90.0" styleClass="proceed-button" text="Start" />
+        <JFXButton fx:id="stopButton" layoutX="689.0" layoutY="22.0" prefHeight="40.0" prefWidth="90.0" styleClass="proceed-button" text="Stop" mouseTransparent="true" />
+        <Text fx:id="statusLabel" fontSmoothingType="LCD" layoutX="16.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="suc-text" text="" textAlignment="LEFT" wrappingWidth="340.0">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Text>
+      <JFXTextArea fx:id="serverLog" layoutX="15.0" layoutY="74.0" prefHeight="510.0" prefWidth="775.0" text="" editable="false" />
+    </children>
+</AnchorPane>

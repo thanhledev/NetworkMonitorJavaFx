@@ -1,0 +1,92 @@
+/* Main controls css style */
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-green: #7CFC00;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+.glyph-icon
+{
+    -fx-fill: -fx-primarytext;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+}
+
+.button:hover, .button:focused{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.text-field
+{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: -fx-secondary;
+    -fx-text-fill: derive(-fx-secondary, 20%);
+}
+
+/* Combo-box styles */
+
+.jfx-combo-box {
+    -fx-prompt-text-fill: -fx-secondary;
+    -fx-text-fill: -fx-secondary;
+    -jfx-focus-color: -fx-secondary;
+}
+
+.combo-box .arrow{
+    -fx-background-color: -fx-secondary;
+}
+
+.jfx-combo-box .list-view .list-cell {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.jfx-combo-box .cell:selected {
+    -fx-text-fill: -fx-secondary;
+}
+
+/* Splash Screen Specification */
+
+.wrong-credentials
+{
+    -jfx-unfocus-color: -fx-red;
+    -jfx-focus-color: -fx-red;
+}
+
+.title-text{
+    -fx-fill: -fx-secondary;
+}
+
+.error-text {
+    -fx-fill: -fx-red;
+}
+
+.success-text {
+    -fx-fill: -fx-green;
+}
+
+/* Server Screen Specification */
+.text-area {
+    -fx-text-fill: -fx-secondary;
+    -fx-prompt-text-fill: -fx-secondary;
+    -jfx-focus-color: -fx-secondary;
+}
+
+/* Client Screen Specification */
+

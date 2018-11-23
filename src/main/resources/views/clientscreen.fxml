@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientScreenController">
+    <children>
+        <JFXTextField fx:id="serverIpAddressTextField" labelFloat="true" layoutX="22.0" layoutY="19.0" prefHeight="33.0" prefWidth="257.0" promptText="SERVER IP ADDRESS (*)">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </JFXTextField>
+      <JFXTextField fx:id="serverListenPortTextField" labelFloat="true" layoutX="305.0" layoutY="20.0" prefHeight="33.0" prefWidth="230.0" promptText="SERVER LISTENING PORT (*)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="clientSendPortTextField" labelFloat="true" layoutX="562.0" layoutY="20.0" prefHeight="33.0" prefWidth="215.0" promptText="CLIENT SENDING PORT (*)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="messageSubjectTextField" labelFloat="true" layoutX="22.0" layoutY="98.0" prefHeight="33.0" prefWidth="758.0" promptText="MESSAGE SUBJECT (*)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="messageContentTextArea" layoutX="22.0" layoutY="157.0" prefHeight="371.0" prefWidth="758.0" promptText="MESSAGE CONTENT" />
+      <JFXButton fx:id="sendButton" layoutX="687.0" layoutY="546.0" prefHeight="40.0" prefWidth="90.0" styleClass="proceed-button" text="Send" />
+      <Text fx:id="statusLabel" fontSmoothingType="LCD" layoutX="22.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="error-text" text="" textAlignment="LEFT" wrappingWidth="651.0">
+        <font>
+            <Font size="12.0" />
+        </font>
+      </Text>
+    </children>
+</AnchorPane>
